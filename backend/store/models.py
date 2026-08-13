@@ -55,6 +55,7 @@ class Cart(models.Model):
 
     @property
     def total(self):
+        # pyrefly: ignore [missing-attribute]
         return sum(item.subtotal for item in self.items.all())
 
 class CartItem(models.Model):
