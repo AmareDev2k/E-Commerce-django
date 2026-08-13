@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 
+from django.conf.global_settings import MEDIA_URL
 from pathlib import Path
 import os
 
@@ -133,4 +134,6 @@ CORS_ALLOW_ALL_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
