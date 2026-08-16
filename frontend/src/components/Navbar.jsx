@@ -1,6 +1,6 @@
 import {Link, useNavigate} from 'react-router-dom';
 import {useCart} from '../context/CartContext.jsx';
-import { clearTokens, getAccessToken } from '../utils/auth.js';
+
 
 function Navbar() {
     const {cartItems} = useCart();
@@ -8,10 +8,11 @@ function Navbar() {
     
     const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
     
-    const isLoggedIn = !!getAccessToken();
+    const isLoggedIn = !!localStorage.getItem('access_token');
 
     const handleLogout = () => {
-        clearTokens();
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('refresh_token');
         navigate('/login');
     };
     return (

@@ -58,7 +58,7 @@ function ProductDetails() {
                         <p className="text-gray-600 mb-4">
                             {product.price}
                         </p>
-                        <button onClick={()=> addToCart(product)} className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        <button onClick={()=> addToCart(product.id)} className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
                             Add to Cart
                         </button>
                         {/*Home Button*/}
