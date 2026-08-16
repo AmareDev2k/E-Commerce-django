@@ -52,7 +52,7 @@ Make sure you have the following installed:
 
 ### ⚙️ Backend Setup (Django)
 
-1. **Clone the repository**
+1. **Clone the repository.**
    ```bash
    git clone [https://github.com/AmareDev2k/E-Commerce-django.git](https://github.com/AmareDev2k/E-Commerce-django.git)
    cd E-Commerce-django/backend
