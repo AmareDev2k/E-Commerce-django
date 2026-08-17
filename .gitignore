@@ -31,3 +31,16 @@ backend/.env
 frontend/node_modules/
 node_modules/
 
+**/__pycache__/
+backend/.pytest_cache/
+.pytest_cache/
+backend/venv/
+.venv/ 
+
+**/__pycache__/
+backend/store/__pycache__
+backend/store/media/
+backend/store/media/product/
+backend/backend/__pycache__
+
+**/**/__pycache__

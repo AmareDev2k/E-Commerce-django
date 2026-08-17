@@ -63,8 +63,6 @@ def update_cart_quantity(request):
         return Response(serializer.data)
     except CartItem.DoesNotExist:
         return Response({'error': 'Cart item not found'}, status=404)
-        
-
 
 @api_view(['POST'])
 def remove_from_cart(request):
