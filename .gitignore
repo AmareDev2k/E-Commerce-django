@@ -44,3 +44,14 @@ backend/store/media/product/
 backend/backend/__pycache__
 
 **/**/__pycache__
+
+
+**/**/pyrefly.toml
+
+**/**/media/
+
+**/**/.env
+
+**/migrations/
+backend/store/migrations/
+**/**/migrations/

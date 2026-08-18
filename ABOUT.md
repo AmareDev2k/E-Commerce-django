@@ -4,8 +4,7 @@ Django + Django REST Framework + PostgreSQL භාවිතයෙන් හද�
 
 ---
 
-## 1. Folder Architecture (Folder ව්‍යුහය)
-
+ 
 ```
 backend/
 ├── manage.py      → Django CLI entry point (runserver, migrate ආදිය run කරන file එක)
